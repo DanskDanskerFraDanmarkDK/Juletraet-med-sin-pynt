@@ -13,8 +13,10 @@ var setup = function(){
 
     // examples
     drawJulekugle(xMid - 150, yMid + 170);
-    drawDannebrog(xMid + 100, yMid - 100);
 
+    for(var i=1;i<12;i++) {
+    drawDannebrog(xMid+40*i-240, yMid+290-(i-6)*(i-6),25,30);
+    }
     // call you own functions here
     drawTemplate(260, 780);
     pop();
@@ -65,12 +67,10 @@ var drawGodJul = function (centerX, centerY) {
     pop();
 };
 
-var drawDannebrog = function (centerX, centerY) {
+var drawDannebrog = function (centerX, centerY, height,width) {
     push();
-    var height = 56;
-    var width = 75;
     fill(255, 0, 0);
-    rect(centerX - width / 2, centerY - height / 2, width, height);
+    rect(centerX - width / 2, centerY - height / 2, width, height,3);
     noStroke();
     fill(255);
     rect(centerX - width / 2, centerY - 1 / 14 * height, width, height / 7);
