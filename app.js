@@ -45,7 +45,7 @@ var drawLevel = function(centerX, centerY, level) {
     push()
     fill(0, 153, 0);
     var slimSize = 20 * level;
-    var baseWidth = 600;
+    var baseWidth = 550;
     var baseHeight = 0.5 * baseWidth;
     var horizontalSpace = 80;
     var baseY = centerY + 280 - level * horizontalSpace;
