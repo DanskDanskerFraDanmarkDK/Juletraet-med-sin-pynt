@@ -29,9 +29,11 @@ var drawTree = function (centerX, centerY) {
 
     // leaves
     var counter = 0;
+    var baseWidth = 600;
     while (counter < 6){
         drawLevel(centerX, centerY, counter);
         counter++;
+        baseWidth = baseWidth - 50;
     } 
 
     pop();
