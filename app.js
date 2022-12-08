@@ -31,9 +31,11 @@ var drawTree = function (centerX, centerY) {
 
     // leaves
     var counter = 0;
-    while (counter < 3){
+    var baseWidth = 600;
+    while (counter < 6){
         drawLevel(centerX, centerY, counter);
         counter++;
+        baseWidth = baseWidth - 50;
     } 
 
     pop();
@@ -56,7 +58,7 @@ var drawLevel = function(centerX, centerY, level) {
  * Should draw a background the tree
  */
 function drawBackground() {
-    
+    background('rgba(30%,30%,30%,1)')
 };
 
 var drawGodJul = function (centerX, centerY) {
