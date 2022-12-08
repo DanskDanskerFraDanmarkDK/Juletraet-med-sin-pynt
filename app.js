@@ -18,9 +18,10 @@ var setup = function(){
     for(var i=1;i<12;i++) {
     drawDannebrog(xMid+40*i-240, yMid+290-(i-6)*(i-6),25,30);
     }
+
     // call you own functions here
     drawTemplate(260, 780);
-    pop();
+
 };
 
 var drawTree = function (centerX, centerY) {
@@ -46,7 +47,7 @@ var drawLevel = function(centerX, centerY, level) {
     push()
     fill(0, 153, 0);
     var slimSize = 20 * level;
-    var baseWidth = 600;
+    var baseWidth = 550;
     var baseHeight = 0.5 * baseWidth;
     var horizontalSpace = 80;
     var baseY = centerY + 280 - level * horizontalSpace;
@@ -66,7 +67,7 @@ var drawGodJul = function (centerX, centerY) {
     push();
     textSize(45);
     fill(255, 0, 0)
-    text("God Jul VG", centerX - 110, centerY);
+    text("God Jul VG", centerX - 380, centerY - 350);
     pop();
 };
 
