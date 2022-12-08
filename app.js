@@ -58,7 +58,7 @@ var drawLevel = function(centerX, centerY, level) {
  * Should draw a background the tree
  */
 function drawBackground() {
-    background('rgba(30%,30%,30%,1)')
+    background(255,193,0)
 };
 
 var drawGodJul = function (centerX, centerY) {
