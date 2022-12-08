@@ -29,7 +29,7 @@ var drawTree = function (centerX, centerY) {
 
     // leaves
     var counter = 0;
-    while (counter < 3){
+    while (counter < 6){
         drawLevel(centerX, centerY, counter);
         counter++;
     } 
