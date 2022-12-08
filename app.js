@@ -60,7 +60,7 @@ var drawLevel = function(centerX, centerY, level) {
  * Should draw a background the tree
  */
 function drawBackground() {
-    background(255,193,0)
+    background(0,146,252)
 };
 
 var drawGodJul = function (centerX, centerY) {
@@ -70,6 +70,7 @@ var drawGodJul = function (centerX, centerY) {
     text("God Jul VG", centerX - 380, centerY - 350);
     pop();
 };
+
 
 var drawDannebrog = function (centerX, centerY, height,width) {
     push();
@@ -101,9 +102,10 @@ var drawJulekugle = function(centerX, centerY) {
  * @param {number} centerY
  */
 var drawTemplate = function(centerX, centerY) {
-    push();
-    // You decorations
-    pop();
+    textSize(300)
+    fill(255, 255, 0)
+    text('*', centerX + 82, centerY - 380)
 };
+
 
 console.log("JS finished.")
