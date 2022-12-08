@@ -5,7 +5,7 @@ var setup = function(){
     var width = 800;
     var height = 1000;
     var xMid = width / 2;
-    var yMid = height / 2;
+    var yMid = height / 2 + 90;
     createCanvas(width, height);
     drawBackground();
     drawTree(xMid, yMid + 50);
@@ -13,7 +13,8 @@ var setup = function(){
 
     // examples
     drawJulekugle(xMid - 150, yMid + 170);
-
+    drawJulekugle(xMid + 150, yMid + 170);
+    drawJulekugle(xMid, yMid + 200);
     for(var i=1;i<12;i++) {
     drawDannebrog(xMid+40*i-240, yMid+290-(i-6)*(i-6),25,30);
     }
